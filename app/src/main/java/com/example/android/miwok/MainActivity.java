@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         TextView fruits = (TextView) findViewById(R.id.fruits);
 
         // Set a click listener on that View
-        phrases.setOnClickListener(new OnClickListener() {
+        fruits.setOnClickListener(new OnClickListener() {
             // The code in this method will be executed when the phrases category is clicked on.
             @Override
             public void onClick(View view) {
