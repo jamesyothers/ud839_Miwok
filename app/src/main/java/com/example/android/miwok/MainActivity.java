@@ -15,9 +15,9 @@
  */
 package com.example.android.miwok;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-//import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
@@ -94,6 +94,22 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start the new activity
                 startActivity(phrasesIntent);
+            }
+        });
+
+        // Find the View that shows the fruits category
+        TextView fruits = (TextView) findViewById(R.id.fruits);
+
+        // Set a click listener on that View
+        phrases.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the phrases category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link FruitsActivity}
+                Intent fruitsIntent = new Intent(MainActivity.this, FruitsActivity.class);
+
+                // Start the new activity
+                startActivity(fruitsIntent);
             }
         });
     }
