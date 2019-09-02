@@ -43,6 +43,6 @@ public class ColorsActivity extends AppCompatActivity {
 
         ListView listView = findViewById(R.id.list);
         listView.setAdapter(wordAdapter);
-        
+
     }
 }
