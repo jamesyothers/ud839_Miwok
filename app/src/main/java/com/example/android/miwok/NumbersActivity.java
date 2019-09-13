@@ -53,7 +53,7 @@ public class NumbersActivity extends AppCompatActivity {
         listView.setAdapter(wordAdapter);
 
         listView.setBackgroundColor(getResources().getColor(R.color.category_numbers));
- 
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
