@@ -17,7 +17,10 @@ package com.example.android.miwok;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -47,6 +50,13 @@ public class NumbersActivity extends AppCompatActivity {
         listView.setAdapter(wordAdapter);
 
         listView.setBackgroundColor(getResources().getColor(R.color.category_numbers));
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(NumbersActivity.this, "List item clicked", Toast.LENGTH_LONG).show();
+            }
+        });
 
     }
 }

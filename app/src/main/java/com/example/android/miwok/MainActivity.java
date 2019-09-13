@@ -97,20 +97,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the fruits category
-        TextView fruits = (TextView) findViewById(R.id.fruits);
-
-        // Set a click listener on that View
-        fruits.setOnClickListener(new OnClickListener() {
-            // The code in this method will be executed when the phrases category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link FruitsActivity}
-                Intent fruitsIntent = new Intent(MainActivity.this, FruitsActivity.class);
-
-                // Start the new activity
-                startActivity(fruitsIntent);
-            }
-        });
     }
 }
