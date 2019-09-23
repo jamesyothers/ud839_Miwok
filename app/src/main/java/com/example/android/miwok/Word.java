@@ -23,6 +23,7 @@ public class Word {
         mAudioResourceId = audioResourceId;
     }
 
+
     public String getMiwokTranslation (){
         return mMiwokTranslation;
     }
